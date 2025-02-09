@@ -1,0 +1,120 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: #1E1E2D;
+    padding-top: 20px;
+}
+
+.sidebar h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+
+.sidebar ul li a:hover {
+    background: #575757;
+    border-radius: 5px;
+}
+
+/* Logout */
+.sidebar ul li a.logout {
+    color: red;
+}
+
+/* Konten */
+.content {
+    margin-left: 260px;
+    padding: 20px;
+    min-height: 100vh;
+    background: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+}
+
+/* Card Layout */
+.card-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 200px;
+}
+
+.card i {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.card p a:hover {
+    text-decoration: underline;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 200px;
+    }
+
+    .content {
+        margin-left: 210px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
